@@ -32,10 +32,10 @@
     </h2>
 </div>
 
-<!-- Row to hold Gallery Buttons -->
+<!-- Row to hold Gallery Links -->
 <div class="row gx-0 gx-lg-4 justify-content-center row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-auto  g-1 g-lg-3 mb-3">   
 
-    <!-- Back Button -->
+    <!-- Back Link -->
     <div class="col menu-item">
         <div class="bg-danger text-center p-0 border border border-dark rounded" style="width:50px; height: 35px;">
             <a class="menu-link text-dark w-100" style="height: 34px; display: flex; align-items: center;" asp-controller="Galleries" asp-action="Index">
@@ -44,18 +44,17 @@
         </div>
     </div>
 
-    <!-- Gallery Buttons -->
+    <!-- Gallery Links -->
     @foreach (var folder in folders)
     {
         <div class="col menu-item" data-viewName="@folder">
             <div id="@folder" class="bg-light text-center p-0 border border-dark rounded">
-                <a id="@folder link" class="menu-link text-dark w-100" asp-controller="@currentController" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
+                <a id="@folder-link" class="menu-link text-dark w-100" asp-controller="@currentController" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
             </div>
         </div>
     }
 
 </div>
-
 
 <!-- Replaces the background-image -->
 <script>
@@ -65,7 +64,7 @@
 <!-- Toggle the Current Menu Button to indicate it is selected -->
 <script>
     var mainElement = document.getElementById("@viewName");
-    var secondaryElement = document.getElementById("@viewName link");
+    var secondaryElement = document.getElementById("@viewName-link");
 
     mainElement.classList.toggle("bg-light");
     mainElement.classList.toggle("bg-success");
