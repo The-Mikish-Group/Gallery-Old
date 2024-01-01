@@ -34,8 +34,8 @@
         @foreach (var folder in folders)
         {
             <div class="col menu-item" data-viewName="@folder">
-                <div class="bg-light text-center p-0 border border border-dark rounded">
-                    <a style="text-decoration: none;" class="menu-link bg-light text-black w-100" asp-controller="@folder">@folder</a>
+                <div class="text-center p-0 border border border-dark rounded">
+                    <a class="menu-link bg-green-lighter text-black w-100" asp-controller="@folder">@folder</a>
                 </div>
             </div>
         }

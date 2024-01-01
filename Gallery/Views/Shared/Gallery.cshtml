@@ -65,8 +65,8 @@
     @foreach (var folder in folders)
     {
         <div class="col menu-item" data-viewName="@folder">
-            <div id="@folder" class="bg-light text-center p-0 border border-dark rounded">
-                <a id="@folder link" class="menu-link text-dark w-100" asp-controller="@currentController" asp-action="gallery" asp-route-viewName="@folder">@folder</a>
+            <div id="@folder" class="bg-green-lighter text-center p-0 border border-dark rounded">
+                <a id="@folder-link" class="menu-link text-dark w-100" asp-controller="@currentController" asp-action="gallery" asp-route-viewName="@folder">@folder</a>
             </div>
         </div>
     }
@@ -79,7 +79,7 @@
     @foreach (var file in files)
     {       
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3">
-            <a class="menu-link d-block text-center bg-white" href="@Url.Content(file)" target="_blank" title="Full-Screen">
+            <a class="menu-link d-block text-center bg-gray-lighter" href="@Url.Content(file)" target="_blank" title="Full-Screen">
                 
                 <!-- Image -->
                 <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(file)" alt="" />
@@ -101,13 +101,14 @@
 <!-- Toggle the Current Menu Button to indicate it is selected -->
 <script>
     var mainElement = document.getElementById("@viewName");
-    var secondaryElement = document.getElementById("@viewName link");
+    var secondaryElement = document.getElementById("@viewName-link");
 
-    mainElement.classList.toggle("bg-light");
+    mainElement.classList.toggle("bg-green-lighter");
     mainElement.classList.toggle("bg-success");
 
     secondaryElement.classList.toggle("text-dark");
     secondaryElement.classList.toggle("text-light");
+    secondaryElement.classList.add("selected");
 </script>
 
 
