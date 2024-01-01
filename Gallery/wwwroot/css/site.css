@@ -1,0 +1,98 @@
+/* General Custom Html stuff */
+body {
+    overflow-y: scroll;
+    line-height: 1;
+    padding-top: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-rendering: optimizeLegibility;
+}
+
+/* make everything a borderbox */
+* {
+    box-sizing: border-box;
+}
+
+/* Used by Auto Top function Must be #ID : Used by JS document.getElementById */
+#top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: default;
+    padding: 8px 24px;
+    border-radius: 4px;
+}
+
+    #top-button:hover {
+        background-color: #555;
+    }
+
+    #top-button:active,
+    #top-button:focus {
+        background-color: red;
+    }
+
+/* Image Gallery Stuff */
+#image-containers {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    #image-containers div .filename {
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+        #image-containers div:hover .filename {
+            color: green !important;
+        }
+
+img {
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+}
+
+.menu-item {
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
+
+.nav-item {
+    width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-link {    
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease;
+    padding: 8px;
+    display: inline-block; 
+    text-align: center; 
+}
+
+    .menu-link:hover {
+        border-color: Black !important;
+        font-weight: bold !important;
+    }
+
+    .menu-link.selected {        
+        font-weight: bold !important;
+    }

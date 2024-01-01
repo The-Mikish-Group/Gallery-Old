@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>wwwroot\favicon.ico</ApplicationIcon>
+    <Title>Gallery</Title>
+    <PackageIcon>BlueSun.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\AP\**" />
+    <Compile Remove="Views\BC\**" />
+    <Compile Remove="Views\Laser\**" />
+    <Compile Remove="Views\MV\**" />
+    <Compile Remove="wwwroot\Gallery\**" />
+    <Compile Remove="wwwroot\lib\**" />
+    <Content Remove="Views\AP\**" />
+    <Content Remove="Views\BC\**" />
+    <Content Remove="Views\Laser\**" />
+    <Content Remove="Views\MV\**" />
+    <Content Remove="wwwroot\Gallery\**" />
+    <Content Remove="wwwroot\lib\**" />
+    <EmbeddedResource Remove="Views\AP\**" />
+    <EmbeddedResource Remove="Views\BC\**" />
+    <EmbeddedResource Remove="Views\Laser\**" />
+    <EmbeddedResource Remove="Views\MV\**" />
+    <EmbeddedResource Remove="wwwroot\Gallery\**" />
+    <EmbeddedResource Remove="wwwroot\lib\**" />
+    <None Remove="Views\AP\**" />
+    <None Remove="Views\BC\**" />
+    <None Remove="Views\Laser\**" />
+    <None Remove="Views\MV\**" />
+    <None Remove="wwwroot\Gallery\**" />
+    <None Remove="wwwroot\lib\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\BCController.cs" />
+    <Compile Remove="Controllers\LaserController.cs" />
+    <Compile Remove="Controllers\MVController.cs" />
+    <Compile Remove="Startup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Christmas.cshtml" />
+    <Content Remove="Views\Home\Demo0337.cshtml" />
+    <Content Remove="Views\Home\Flowers.cshtml" />
+    <Content Remove="Views\Home\Misc.cshtml" />
+    <Content Remove="Views\Home\Religious.cshtml" />
+    <Content Remove="Views\Shared\UploadImageView.cshtml" />
+    <Content Remove="Views\Shared\_BC_ImagesMenu.cshtml" />
+    <Content Remove="Views\Shared\_Gallery.cshtml" />
+    <Content Remove="Views\Shared\_GalleryMenu.cshtml" />
+    <Content Remove="Views\Shared\_ImagesMenu.cshtml" />
+    <Content Remove="Views\Shared\_Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Shared\Galleries.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
