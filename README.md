@@ -1,15 +1,10 @@
 # Gallery
 MVC Gallery site
 
-Gallery reads the folder(s) and files dynamically. Add a folder to a Gallery folder or add a file to a Gallery folder's subfolders and it will automatically be displayed. File name is displayed below image and clicking it will take you to a new tab of the full-screen image.
+Gallery reads the folder(s) and files dynamically, so add a folder to a Gallery folder or add a file to an existing folder and it will automatically be displayed.
 
-## To add new Gallery folders you must make an entry in the "SharedController" like this:
-public class MVController : BaseController
-{
-    public IActionResult Index() => GalleryView();
-    public IActionResult Gallery(string viewName) => GalleryView(viewName);
-}
+## To add new controller level Gallery folders you must make an entry in the "SharedController" like this:
 
-In this case, "MV" is the Gallery folder to be added; having a controller entry takes care of the rest of any needed programming.
+### public class WoodworkingController : BaseController { }
 
-Easy folder and image drag and drop using FTP. Republishing is only necessary if a new main gallery folder is added to create the controller.
+In this case, a "Woodworking" Gallery folder should be added and Woodworking gallery folders with images into the new Controller level Gallery folder. 
