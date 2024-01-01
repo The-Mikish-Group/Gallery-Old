@@ -67,7 +67,132 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\Gallery\Demo\Flowers\background.jpg" />
+    <Content Include="wwwroot\Gallery\Demo\Flowers\Easter.jpg" />
+    <Content Include="wwwroot\Gallery\Demo\Flowers\flower 6p.jpg" />
+    <Content Include="wwwroot\Gallery\Demo\Flowers\flower.jpg" />
+    <Content Include="wwwroot\Gallery\Demo\Flowers\Flowers for Me.jpg" />
+    <Content Include="wwwroot\Gallery\Demo\Flowers\four-leaf.JPG" />
+    <Content Include="wwwroot\Gallery\Demo\Flowers\My Rose Too.jpg" />
+    <Content Include="wwwroot\Gallery\Demo\Flowers\My Rose.jpg" />
+    <Content Include="wwwroot\Gallery\Demo\Flowers\Shamrock.jpg" />
+    <Content Include="wwwroot\Gallery\Demo\Flowers\Spring.jpg" />
+    <Content Include="wwwroot\Gallery\Laser\Christmas\background.JPG" />
+    <Content Include="wwwroot\Gallery\Laser\Christmas\Bell.png" />
+    <Content Include="wwwroot\Gallery\Laser\Christmas\Ornament.png" />
+    <Content Include="wwwroot\Gallery\Laser\Christmas\SnowMan.png" />
+    <Content Include="wwwroot\Gallery\Laser\Christmas\tree.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Flowers01.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Flowers02.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Flowers03.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Flowers04.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Flowers05.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Flowers06.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Flowers07.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Flowers08.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Flowers09.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Flowers10.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\LoveMom.png" />
+    <Content Include="wwwroot\Gallery\Laser\Flowers\Rose.png" />
+    <Content Include="wwwroot\Gallery\Laser\Misc\background.jpg" />
+    <Content Include="wwwroot\Gallery\Laser\Misc\Corgi.png" />
+    <Content Include="wwwroot\Gallery\Laser\Misc\HorseHead.png" />
+    <Content Include="wwwroot\Gallery\Laser\Misc\Ivan.png" />
+    <Content Include="wwwroot\Gallery\Laser\Misc\Koopzillah.png" />
+    <Content Include="wwwroot\Gallery\Laser\Misc\TeaCup.png" />
+    <Content Include="wwwroot\Gallery\Laser\Religious\AP-Logo.png" />
+    <Content Include="wwwroot\Gallery\Laser\Religious\Bird-Bible.png" />
+    <Content Include="wwwroot\Gallery\Laser\Religious\Bird.png" />
+    <Content Include="wwwroot\Gallery\Laser\Religious\Cross.png" />
+    <Content Include="wwwroot\Gallery\Laser\Religious\Jesus.png" />
+    <Content Include="wwwroot\Gallery\Laser\Religious\Nativity.png" />
+    <Content Include="wwwroot\Gallery\Laser\Religious\Prayer.png" />
+    <Content Include="wwwroot\Gallery\Laser\Religious\Seal.png" />
+    <Content Include="wwwroot\Gallery\Laser\Seashore\background.jpg" />
+    <Content Include="wwwroot\Gallery\Laser\Seashore\dolphins.png" />
+    <Content Include="wwwroot\Gallery\Laser\Seashore\Flamingos.png" />
+    <Content Include="wwwroot\Gallery\Laser\Seashore\Manatee.png" />
+    <Content Include="wwwroot\Gallery\Laser\Seashore\Palm01.png" />
+    <Content Include="wwwroot\Gallery\Laser\Seashore\Palm02.png" />
+    <Content Include="wwwroot\Gallery\Laser\Seashore\Shell01.png" />
+    <Content Include="wwwroot\Gallery\Laser\Seashore\Shell02.png" />
+    <Content Include="wwwroot\Gallery\Laser\Seashore\Squirrel.png" />
+    <Content Include="wwwroot\Gallery\Laser\Seashore\Starfish.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="Views\Shared\Galleries.cshtml" />
+    <None Include="wwwroot\Gallery\Demo\background.webp" />
+    <None Include="wwwroot\Gallery\Demo\Sunsets\A Favorite One.webp" />
+    <None Include="wwwroot\Gallery\Demo\Sunsets\A Favorite Too.webp" />
+    <None Include="wwwroot\Gallery\Demo\Sunsets\A nice one.webp" />
+    <None Include="wwwroot\Gallery\Demo\Sunsets\Another Favorite.webp" />
+    <None Include="wwwroot\Gallery\Demo\Sunsets\background.webp" />
+    <None Include="wwwroot\Gallery\Demo\Sunsets\Golden.webp" />
+    <None Include="wwwroot\Gallery\Demo\Sunsets\Goodbye.webp" />
+    <None Include="wwwroot\Gallery\Demo\Sunsets\Our Flag.webp" />
+    <None Include="wwwroot\Gallery\Demo\Sunsets\Rainbow.webp" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Autumn1.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Autumn2.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Autumn3.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Autumn4.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Bat1.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Bat2.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Bat3.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Bat4.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\BirthdayCake.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\BlueSun.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Blue_Snowman.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Blue_Snowman_003a.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Christmas.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Countdowns.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Dark Side Jagged.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Dark Side Of The Moon.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Egg1.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Egg2.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Egg3.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Egg4.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Elf.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Elf1.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Elf2.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Fishing.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Heart1.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Heart2.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Heart3.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Home.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Humor.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Info.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Jack-O-Lantren.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Laughing Face.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Links.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Memes.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\More.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Next.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Photos.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Previous.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Pumpkin.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Retired.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Santa-tg.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Santa.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Santa1.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Santa2.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Snowflake1.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Snowflake2.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Snowflake3.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Snowflake4.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Snowflake5.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Snowflake6.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Snowman.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Snowman_L.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Snowman_Scene.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Sunglasses.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Turkey.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Tweety.svg" />
+    <None Include="wwwroot\Gallery\Demo\SVG Files\Wildlife.svg" />
+    <None Include="wwwroot\Gallery\Laser\background.webp" />
+    <None Include="wwwroot\Gallery\Laser\Flowers\background.webp" />
+    <None Include="wwwroot\Gallery\Laser\Religious\background.webp" />
+    <None Include="wwwroot\Gallery\Laser\Religious\Fish.svg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -78,6 +203,10 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Gallery\Woodworking\" />
   </ItemGroup>
 
 </Project>

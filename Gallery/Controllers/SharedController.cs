@@ -27,6 +27,7 @@ namespace Gallery.Controllers
     }
     public class DemoController : BaseController { }
     public class LaserController : BaseController { }
+    public class WoodworkingController : BaseController { }
 
     // Add more galleries here: (the controller name and the 'galleryfolder/ folderName should be the same)
     //
