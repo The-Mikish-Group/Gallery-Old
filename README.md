@@ -8,3 +8,5 @@ Gallery reads the folder(s) and files dynamically, so add a folder to a Gallery 
 ### public class WoodworkingController : BaseController { }
 
 In this case, a "Woodworking" Gallery folder should be added and Woodworking gallery folders with images into the new Controller level Gallery folder. 
+
+https:Gallery.Illustrate.net
