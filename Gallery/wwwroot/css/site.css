@@ -55,9 +55,9 @@ body {
         text-decoration: none !important;
     }
 
-        #image-containers div:hover .filename {
+/* #image-containers div:hover .filename {
             color: green !important;
-        }
+        }*/
 
 img {
     cursor: pointer;
@@ -65,10 +65,10 @@ img {
 }
 
 .menu-item {
-    width: 180px;
+    min-width: 10px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;   
+    text-overflow: ellipsis;
 }
 
 .nav-item {
@@ -78,21 +78,41 @@ img {
     text-overflow: ellipsis;
 }
 
-.menu-link {    
+.menu-link {
     text-decoration: none;
     border: 2px solid transparent;
     border-radius: 4px;
     transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease;
     padding: 8px;
-    display: inline-block; 
-    text-align: center; 
+    display: inline-block;
 }
 
     .menu-link:hover {
+        color: black !important;
+        /*border-color: Black !important;*/
+        font-weight: bold !important;
+    }
+
+    .menu-link.selected {
+        font-weight: bold !important;
+    }
+
+.border-link {
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease;
+    padding: 8px;
+    display: inline-block;
+    border-color: Black !important;
+}
+
+    .border-link:hover {
+        color: black !important;
         border-color: Black !important;
         font-weight: bold !important;
     }
 
-    .menu-link.selected {        
+    .border-link.selected {
         font-weight: bold !important;
     }

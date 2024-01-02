@@ -50,7 +50,7 @@
 <button type="button" onclick="topFunction()" id="top-button" title="Go to top">Top</button>
 
 <!-- Gallery Link menu -->
-<div class="row gx-0 gx-lg-4 justify-content-center row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-auto  g-1 g-lg-3 mb-3">
+<div class="row gx-0 gx-lg-4 justify-content-center row-cols-4 row-cols-sm-4 row-cols-md-6 row-cols-lg-8 row-cols-xl-auto  g-1 g-lg-3 mb-3">
 
     <!-- Back Link -->
     <div class="col menu-item">
@@ -105,27 +105,10 @@
 
     mainElement.classList.toggle("bg-green-lighter");
     mainElement.classList.toggle("bg-success");
+    mainElement.style.pointerEvents = 'none';
 
     secondaryElement.classList.toggle("text-dark");
     secondaryElement.classList.toggle("text-light");
     secondaryElement.classList.add("selected");
+
 </script>
-
-
-@* <!-- Hide current selected menu option (Optional) -->    
-<script>
-    hideCurrentMenuSelection('@viewName');
-
-    function hideCurrentMenuSelection(viewName) {
-        var elements = document.querySelectorAll('.menu-item');
-        elements.forEach(function (element) {
-            if (element.getAttribute('data-viewName') === viewName) {
-                element.style.display = 'none';
-
-            } else {
-                element.style.display = '';
-
-            }
-        });
-    }
-</script> *@
