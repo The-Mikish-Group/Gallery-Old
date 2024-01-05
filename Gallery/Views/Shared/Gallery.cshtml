@@ -176,6 +176,7 @@
             !System.IO.Path.GetFileName(file).EndsWith("_thumb.jpg", StringComparison.OrdinalIgnoreCase) &&
             (System.IO.Path.GetExtension(file).Equals(".png", StringComparison.OrdinalIgnoreCase) ||
              System.IO.Path.GetExtension(file).Equals(".jpg", StringComparison.OrdinalIgnoreCase) ||
+             System.IO.Path.GetExtension(file).Equals(".gif", StringComparison.OrdinalIgnoreCase) ||
              System.IO.Path.GetExtension(file).Equals(".svg", StringComparison.OrdinalIgnoreCase) ||
              System.IO.Path.GetExtension(file).Equals(".webp", StringComparison.OrdinalIgnoreCase)))
         .Select(file => $"~/{System.IO.Path.Combine(currentAction, currentController, viewName, System.IO.Path.GetFileName(file)).Replace("\\", "/")}")

@@ -18,10 +18,13 @@ namespace Gallery.Helpers
             _env = env;
         }
 
-        public static void CreateThumbnail(string file, string thumbnailsPath, int thumbnailWidth = 100, int thumbnailHeight = 100)
+        public static void CreateThumbnail(string file, string thumbnailsPath)
         {
             try
             {
+                int thumbnailWidth = 1200;
+                int thumbnailHeight = 1200;
+
                 using (var originalImage = Image.Load(Path.Combine(_env.WebRootPath, file.TrimStart('~', '/'))))
                 {
                     originalImage.Mutate(x => x
