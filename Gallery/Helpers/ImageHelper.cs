@@ -22,8 +22,8 @@ namespace Gallery.Helpers
         {
             try
             {
-                int thumbnailWidth = 1200;
-                int thumbnailHeight = 1200;
+                int thumbnailWidth = 800;
+                int thumbnailHeight = 800;
 
                 using (var originalImage = Image.Load(Path.Combine(_env.WebRootPath, file.TrimStart('~', '/'))))
                 {

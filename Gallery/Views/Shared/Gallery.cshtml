@@ -255,7 +255,7 @@
     @foreach (var folder in folders)
     {
         <div class="col menu-item" data-viewName="@folder">
-            <div id="@folder" class="bg-green-lighter text-center p-0 border border-dark rounded">
+            <div id="@folder" class="bg-gray-lighter text-center p-0 border border-dark rounded">
                 <a id="@folder-link" class="menu-link text-dark w-100" asp-controller="@currentController" asp-action="gallery" asp-route-viewName="@folder">@folder</a>
             </div>
         </div>
@@ -272,7 +272,7 @@
             <a class="menu-link d-block text-center bg-gray-lighter" href="@Url.Content(file)" target="_blank" title="Full-Screen">
 
                 <!-- Image -->
-                <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(System.IO.Path.Combine("/", currentAction, currentController, viewName, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt="" />
+                <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(System.IO.Path.Combine("/", currentAction, currentController, viewName, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt=" * Click to Load" />
 
                 <!-- File Name -->
                 <div class="text-black text-center pt-1">
@@ -293,8 +293,8 @@
     var mainElement = document.getElementById("@viewName");
     var secondaryElement = document.getElementById("@viewName-link");
 
-    mainElement.classList.toggle("bg-green-lighter");
-    mainElement.classList.toggle("bg-success");
+    mainElement.classList.toggle("bg-gray-lighter");
+    mainElement.classList.toggle("bg-gray-dark");
     mainElement.style.pointerEvents = 'none';
 
     secondaryElement.classList.toggle("text-dark");

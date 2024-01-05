@@ -65,7 +65,7 @@ img {
 }
 
 .menu-item {
-    min-width: 10px;
+    min-width: 126px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
