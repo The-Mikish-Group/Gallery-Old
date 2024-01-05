@@ -11,11 +11,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebugType>none</DebugType>
+    <DebugType>portable</DebugType>
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType>none</DebugType>
+    <DebugType>portable</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -58,6 +59,8 @@
     <Content Remove="Views\Home\Flowers.cshtml" />
     <Content Remove="Views\Home\Misc.cshtml" />
     <Content Remove="Views\Home\Religious.cshtml" />
+    <Content Remove="Views\Shared\Gallerynew.cshtml" />
+    <Content Remove="Views\Shared\Galleryold.cshtml" />
     <Content Remove="Views\Shared\UploadImageView.cshtml" />
     <Content Remove="Views\Shared\_BC_ImagesMenu.cshtml" />
     <Content Remove="Views\Shared\_Gallery.cshtml" />
@@ -190,7 +193,6 @@
     <None Include="wwwroot\Gallery\Demo\SVG Files\Tweety.svg" />
     <None Include="wwwroot\Gallery\Demo\SVG Files\Wildlife.svg" />
     <None Include="wwwroot\Gallery\Laser\background.webp" />
-    <None Include="wwwroot\Gallery\Laser\Flowers\background.webp" />
     <None Include="wwwroot\Gallery\Laser\Religious\background.webp" />
     <None Include="wwwroot\Gallery\Laser\Religious\Fish.svg" />
   </ItemGroup>
@@ -207,6 +209,10 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Gallery\Woodworking\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.2" />
   </ItemGroup>
 
 </Project>
