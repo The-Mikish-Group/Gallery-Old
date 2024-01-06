@@ -44,7 +44,7 @@
     }
 
     // Get the backgroundImage path
-    string backgroundPath = $"gallery/{currentController}/{viewName}/background.webp"; // default
+    string backgroundImage = $"gallery/{currentController}/{viewName}/background.webp"; // default
     string[] extensions = { ".jpg", ".png", ".webp", ".svg" };
 
     // Iterate through the possible background extension until there is a match,
@@ -53,7 +53,7 @@
         var bgPath = $"gallery/{currentController}/{viewName}/background{extension}";
         if (System.IO.File.Exists(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", bgPath)))
         {
-            backgroundPath = bgPath;
+            backgroundImage = bgPath;
             break;
         }
     }
@@ -85,7 +85,7 @@
     }
 }
  
-<!-- Goto Top button -->
+<!-- Go to Top button -->
 <button type="button" onclick="topFunction()" id="top-button" title="Go to top">Top</button>
 
 <!-- Gallery Link menu -->
@@ -112,22 +112,22 @@
 </div>
 
 <!-- Gallery Images -->
-<div id="images-container" class="row g-0 g-lg-4" style="display: none">
+<div id="images-container" class="row g-0 g-lg-2" style="display: none">
 
     <!-- Display each Image file and filename -->
     @foreach (var file in files)
     {
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3">
+
+            <!-- Link to file -->
             <a class="menu-link d-block text-center bg-gray-lighter" href="@Url.Content(file)" target="_blank" title="Full-Screen">
 
-                <!-- Image -->
-                <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(System.IO.Path.Combine("/", currentAction, currentController, viewName, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt=" * Click to Load" />
+                <!-- file_thumb -->
+                <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(System.IO.Path.Combine("/", currentAction, currentController, viewName, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt="_Click Me_" />
 
-                <!-- File Name -->
-                <div class="text-black text-center pt-1">
-                    @* @System.IO.Path.GetFileNameWithoutExtension(file) *@
+                <!-- file name (max of 30 characters shown) -->
+                <div class="text-black text-center pt-1">                    
                     @System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))
-
                 </div>
             </a>
         </div>
@@ -136,7 +136,7 @@
 
 <!-- Replaces the background-image -->
 <script>
-    $("body").css("background-image", "url('../@Url.Content(backgroundPath)')");
+    $("body").css("background-image", "url('../@Url.Content(backgroundImage)')");
 </script>
 
 <!-- Toggle the Current Menu Button to indicate it is selected -->

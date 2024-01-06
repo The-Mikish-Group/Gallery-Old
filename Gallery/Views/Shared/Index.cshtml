@@ -3,12 +3,14 @@
     // viewName is used in script to identify elements by id and is also a gallery folder 
     var viewName = ViewData["ViewName"]?.ToString();
 
+
     // Get the Gallery folders
     string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
+
     var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/Gallery/{currentController}"))
                            .Select(folder => System.IO.Path.GetFileName(folder))
-                           .ToList();
-    
+                           .ToList();  
+
     // Background image stuff
     string backgroundImage = $"gallery/{currentController}/background.webp"; // default
     string[] imageExtensions = { ".jpg", ".png", ".webp", ".svg" }; // possible extensions

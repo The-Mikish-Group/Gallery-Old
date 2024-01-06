@@ -29,9 +29,11 @@ namespace Gallery.Controllers
     public class LaserController : BaseController { }
     public class WoodworkingController : BaseController { }
 
+    // KelvynPark
+    public class KelvynPark68Controller : BaseController { }
+
+
     // Add more galleries here: (the controller name and the 'galleryfolder/ folderName should be the same)
-    //
-    // Example (mv):
     // Uncomment the line below to create a "Family" controller, then add a folder named "Family" to your 'galleryFolder' with images.
     //
     // public class FamilyController : BaseController { }  
